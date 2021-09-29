@@ -1,0 +1,21 @@
+from appsite import db
+from appsite.models import User, Post
+
+la final modificare cu:
+db.session.commit()
+
+luare toate elementele
+User.query.all()
+
+stergere toate
+User.query.delete()
+
+adaugare unul anume
+db.session.add(me)
+
+stergere unul anume
+db.session.delete(me)
+db.session.commit()
+
+filtru
+peter = User.query.filter_by(username='peter').first()
